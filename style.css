@@ -1,0 +1,388 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body */
+
+
+body {
+    font-family: 'Poppins', sans-serif;
+    color: #333;
+    line-height: 1.6;
+    background-image: url(''); /* Add the background image */
+    background-size: cover;  /* Ensure the image covers the entire page */
+    background-position: center; /* Center the image */
+    background-attachment: fixed; /* Keep the background fixed when scrolling */
+}
+
+header {
+    background-color: #fff; /* Dark background for the header */
+    padding: 40px 0;
+    display: flex;
+    justify-content: center; /* Center the navbar horizontally */
+    position: fixed; /* Fix the navbar at the top of the page */
+    top: 0; /* Ensure it's at the top */
+    left: 0; /* Align to the left edge */
+    width: 100%; /* Full width of the page */
+    z-index: 1000; /* Ensure the navbar stays above other content */
+}
+
+.logo img {
+    width: 100px; /* Adjust the size of the logo */
+    height: 100px; /* Keep the height the same as the width */
+    border-radius: 50%; /* Makes the logo circular */
+    object-fit: cover; /* Ensures the image doesn't stretch and keeps the aspect ratio */
+    position: absolute; /* Position the logo at the top-left */
+    top: 20px; /* Optional: Space from the top edge */
+    left: 30px; /* Optional: Space from the left edge */
+}
+
+
+nav {
+    width: 100%; /* Ensures the navigation spans the full width */
+    max-width: 1200px; /* Optional: Adjust for max width */
+}
+
+nav .logo img {
+    height: 100px;
+}
+
+/* Navigation Links */
+.nav-links {
+    display: flex;
+    justify-content: center; /* Centers the links horizontally */
+    list-style: none;
+    background-color: white; /* White background for links */
+    padding: 10px 0; /* Padding to add space around the links */
+    border-radius: 5px; /* Optional: rounded corners */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Optional: shadow for depth */
+}
+/* Styling for individual list items */
+.nav-links li {
+    margin: 0 20px; /* Spacing between the links */
+}
+
+/* Styling for the links */
+.nav-links a {
+    text-decoration: none;
+    color: #333; /* Dark text color */
+    font-size: 16px; /* Font size */
+    padding: 10px;
+    transition: color 0.3s ease; /* Smooth transition on hover */
+}
+
+/* Hover effect for links */
+.nav-links a:hover {
+    color: #007BFF; /* Change color when hovered */
+}
+
+#hero {
+    height: 700px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: relative;
+    background-size: cover;
+    background-position: center 2cm; /* This moves the background 3 cm down */
+    background-image: url('Images/Background.jpg'); /* Replace with the correct image path */
+}
+/* Define the keyframes animation for background-image change */
+
+
+/* Image Carousel Styling */
+.image-carousel {
+    width: 100%;
+    overflow: hidden;
+    margin-top: 50px; /* Add some space from the section above */
+}
+
+.carousel-images {
+    display: flex;
+    transition: transform 0.5s ease-in-out; /* Smooth transition for sliding */
+}
+
+.carousel-images img {
+    width: 100%;
+    height: auto;
+    flex: 0 0 100%; /* Make images take full width of the container */
+}
+
+/* Optional: Style the Hero Heading to stand out */
+#hero h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    color: white;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+/* Add some styles for button */
+#hero .cta-button {
+    background-color: #f7a800;
+    padding: 12px 25px;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+/* Navigation buttons */
+.prev, .next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 24px;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5);
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    z-index: 2;
+}
+
+.prev {
+    left: 20px;
+}
+
+.next {
+    right: 20px;
+}
+
+/* Optional: Add hover effect */
+.prev:hover, .next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Hero Section Text */
+#hero .hero-content h1 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+}
+
+#hero .cta-button {
+    background-color: #f7a800;
+    padding: 12px 25px;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    margin-top: calc(80vh + 1134px); /* Move the button 30cm (1134px) down from its current position */
+}
+
+
+/* About Section with Background Image */
+#about {
+  
+    background-image: url(''); /* Replace with your actual image path */
+    background-size: cover;
+    background-position: center;
+    padding: 10px 40px;
+    color: white;
+    text-align: center;
+}
+
+/* About Section Text */
+#about h2 {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+}
+
+.about-details {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 30px;
+}
+
+.about-item {
+    max-width: 300px;
+}
+
+/* Services Section */
+#services {
+    padding: 60px 20px;
+    background-color: #fff;
+    text-align: center;
+}
+
+#services h2 {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+}
+
+.services-list {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.service-item {
+    width: 30%;
+    padding: 15px;
+    background-color: #f7f7f7;
+    margin-bottom: 20px;
+    border-radius: 5px;
+}
+
+.service-item h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+/* Gallery Section */
+#gallery {
+    padding: 60px 20px;
+    background-color: #f7f7f7;
+    text-align: center;
+}
+
+#gallery h2 {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+}
+
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 15px;
+}
+
+.gallery-grid img {
+    width: 100%; /* Make images responsive */
+    height: 300px; /* Set a fixed height for consistency */
+    object-fit: cover; /* Ensure images cover the area without distortion */
+    border-radius: 8px; /* Optional: rounded corners for images */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: subtle shadow for effect */
+    transition: transform 0.3s ease; /* Optional: smooth hover effect */
+}
+
+
+/* Contact Section */
+#contact {
+    padding: 60px 20px;
+}
+
+form {
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: white;
+    padding: 30px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 5px;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+textarea {
+    height: 150px;
+}
+
+.cta-button {
+    background-color: #f7a800;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+footer .social-media {
+    list-style: none;
+    padding: 0;
+    margin-top: 10px;
+}
+
+footer .social-media li {
+    display: inline;
+    margin: 0 10px;
+}
+
+footer .social-media a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+/* Overlay for Hero Section */
+#hero {
+    position: relative;
+}
+
+#hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5); /* Black overlay with 50% opacity */
+    z-index: -1;
+}
+
+/* About Section Overlay */
+#about {
+    position: relative;
+}
+
+#about::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.4); /* Dark overlay with 40% opacity */
+    z-index: -1;
+}
+
+
+.container {
+    text-align: center;
+    padding: 20px;
+}
+
+#contact h2 {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+}
+
+.contact-details {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    color: #333;
+}
+
+.contact-details p {
+    margin-bottom: 15px;
+}
+
+.contact-details strong {
+    color: #f7a800; /* Highlight the labels */
+}
