@@ -6,8 +6,6 @@
 }
 
 /* Body */
-
-
 body {
     font-family: 'Poppins', sans-serif;
     color: #333;
@@ -39,7 +37,6 @@ header {
     top: 20px; /* Optional: Space from the top edge */
     left: 30px; /* Optional: Space from the left edge */
 }
-
 
 nav {
     width: 100%; /* Ensures the navigation spans the full width */
@@ -80,7 +77,7 @@ nav .logo img {
 }
 
 #hero {
-    height: 700px;
+    height: 900px;
     color: white;
     display: flex;
     justify-content: center;
@@ -89,10 +86,8 @@ nav .logo img {
     position: relative;
     background-size: cover;
     background-position: center 2cm; /* This moves the background 3 cm down */
-    background-image: url('Images/Background.jpg'); /* Replace with the correct image path */
+    background-image: url('Images/prakruthi\ bhagyam\ Farms.jpg'); /* Replace with the correct image path */
 }
-/* Define the keyframes animation for background-image change */
-
 
 /* Image Carousel Styling */
 .image-carousel {
@@ -106,6 +101,70 @@ nav .logo img {
     transition: transform 0.5s ease-in-out; /* Smooth transition for sliding */
 }
 
+.container {
+    text-align: center;
+    padding: 20px;
+}
+
+/* Heading Style */
+.container h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+/* Gallery Grid Styling */
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 15px;
+    justify-items: center;
+}
+
+/* Product Styling */
+.product {
+    position: relative;
+    text-align: center; /* Centers the content inside the product container */
+}
+
+/* Image Styling */
+.product img {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+    margin-bottom: 10px; /* Space between image and dropdown */
+  
+    display: block;
+    margin: 0 auto;
+}
+
+/* Image Hover Effect */
+.product img:hover {
+    transform: scale(1.05);
+}
+
+/* Dropdown Styling */
+.quantity-dropdown {
+    margin-top: 10px;
+    text-align: center;
+    padding: 5px;
+    font-size: 1em;
+}
+
+/* Rate Styling */
+.rate {
+    margin-top: -10px; /* Optional: adjust the gap between image and rate */
+    font-size: 16px;
+    font-weight: bold;
+    transform: translateY(0.5cm); /* Moves the rate text 0.5 cm down */
+}
+
+/* Hover Effect */
+.product img:hover {
+    transform: scale(1.05);
+}
 .carousel-images img {
     width: 100%;
     height: auto;
@@ -174,10 +233,8 @@ nav .logo img {
     margin-top: calc(80vh + 1134px); /* Move the button 30cm (1134px) down from its current position */
 }
 
-
 /* About Section with Background Image */
 #about {
-  
     background-image: url(''); /* Replace with your actual image path */
     background-size: cover;
     background-position: center;
@@ -259,7 +316,6 @@ nav .logo img {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: subtle shadow for effect */
     transition: transform 0.3s ease; /* Optional: smooth hover effect */
 }
-
 
 /* Contact Section */
 #contact {
@@ -362,17 +418,7 @@ footer .social-media a {
     z-index: -1;
 }
 
-
-.container {
-    text-align: center;
-    padding: 20px;
-}
-
-#contact h2 {
-    font-size: 2.5rem;
-    margin-bottom: 30px;
-}
-
+/* Contact Details */
 .contact-details {
     font-size: 1.2rem;
     line-height: 1.6;
